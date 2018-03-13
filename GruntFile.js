@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         /* Clear out the images directory if it exists */
         clean: {
             dev: {
-                src: ['images'],
+                src: ['img'],
             },
         },
 
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         mkdir: {
             dev: {
                 options: {
-                    create: ['images']
+                    create: ['img']
                 },
             },
         },
