@@ -66,7 +66,7 @@ body {
 
 /*frame-section*/
 
-.main-pic{
+.frame{
     order: 2;
     width: 100%;
     height: 400px;
@@ -102,7 +102,7 @@ body {
     background-color: dimgrey;
 }
 
-.little-text{
+.project-title{
     order: 1;
     width: 100%;
     font-size: 3em;
@@ -180,43 +180,112 @@ body {
 html {
     width: 100%;
     height: 100%;
+    display: grid;
 }
 
 body {
     width: inherit;
     height: inherit;
-    display: flex;
-    flex-wrap: wrap;
+    display: inherit;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
+/*title section*/
+
+.logo{
+    grid-column: 1;
+    height: 100%;
+    grid-row: 1;
+}
 
 
 .my-name{
-    order: 2;
-    width: 80%;
-    padding-left: 66%;
+    font-family: 'MedievalSharp', cursive;
+    width: 100%;
+    grid-column: 3;
+    text-align: center;
 }
 
 .title {
-    order: 1;
+    
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: grey 1px solid;
+    display: grid;
+    grid-row: 1;
+    height: 100%;
+    grid-template-columns: 33% 33% 33%;
+    background-color: goldenrod;
 }
-.main-pic{
-    order: 2;
+.frame{
+    width: 100%;
+    grid-row: 2;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+
+.quote-frame{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.qoute{
+    text-align: center;
+    color: #f5deb3;
     width: 100%;
 }
 
 .projects{
-    order: 3;
     width: 100%;
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 100%;
 }
 
-.logo{
-    order: 1;
-    width: 20%;
+.project-title{
+     grid-column: 1;
+}
+
+.web-sites{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.pixel-art{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+}
+.responsive-animal-art{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+}
+
+.weather-app{
+     grid-column: 3;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+}
+.pic{
+    grid-row: 1;
+}
+
+.name{
+    grid-row: 2;
+}
+
+.footer{
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
 }
 
 }
