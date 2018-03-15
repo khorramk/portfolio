@@ -15,7 +15,7 @@ body {
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    grid-template-rows: 5% 15% 60% 20%;
+    grid-template-rows: 15% 15% 50% 20%;
     height: inherit;
 
 }
@@ -102,7 +102,7 @@ width: 100%;
 display: grid;
 background-color: #696969;
 grid-row: 3;
-grid-template-rows: 15% 85%;
+grid-template-rows: 5% 95%;
 height: 100%;
 overflow-y: scroll;
 }
@@ -132,7 +132,9 @@ display: grid;
 justify-content: center;
 grid-template-rows: 50% 50%;
 height: 100%;
-    grid-row-gap: 60%;
+    grid-row-gap: 70%;
+    background-color: yellow;
+
 }
 
 
@@ -144,7 +146,8 @@ grid-template-rows: 50% 50%;
 justify-content: center;
 grid-row: 2;
     
-grid-row-gap: 20%;
+grid-row-gap: 70%;
+
 }
 
 .weather-app{
@@ -152,7 +155,7 @@ width: 100%;
 display: grid;
 grid-template-rows: 50% 50%;
 grid-row: 3;
-grid-row-gap: 20%;
+grid-row-gap: 70%;
 }
 
 .pic {
@@ -180,13 +183,13 @@ border-right: 50px solid transparent;
 .project-one-p*{
     border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
-	border-bottom: 100px solid yellow;
+	background-color: yellow;
 }
 
 .project-two-p*{
     border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
-	border-bottom: 100px solid green;
+	background-color: greenyellow;
 
 
 }
@@ -194,7 +197,7 @@ border-right: 50px solid transparent;
 .project-three-p*{
     border-left: 50px solid transparent;
 	border-right: 50px solid transparent;
-	border-bottom: 100px solid green;
+	border-bottom: 100px solid aliceblue;
 
 
 }
