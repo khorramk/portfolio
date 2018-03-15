@@ -15,7 +15,7 @@ body {
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 5% 15% 60% 20%;
     height: inherit;
 
 }
@@ -34,6 +34,8 @@ body {
     position: relative;
     grid-template-columns: 50% 50%;
     grid-row: 1;
+    grid-row: 1;
+    /*! grid-column: 1; */
 }
 
 
@@ -47,6 +49,8 @@ body {
     opacity: 0.5;
     grid-column: 1;
 
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .my-pic{
@@ -98,13 +102,14 @@ width: 100%;
 display: grid;
 background-color: #696969;
 grid-row: 3;
-grid-template-rows: 50% 50%;
+grid-template-rows: 15% 85%;
 height: 100%;
+overflow-y: scroll;
 }
 
 .project-title{
 width: 100%;
-font-size: 3em;
+font-size: xx-large;
 font-family: berkshire;
 text-align: center;
 grid-row: 1;
@@ -117,7 +122,8 @@ grid-row: 2;
 display: grid;
 grid-template-rows: 33% 33% 33%;
 height: 100%;
-justify-content: center;
+/*! justify-content: center; */
+ grid-row-gap: 20%;
 }
 
 .pixel-art{
@@ -126,6 +132,7 @@ display: grid;
 justify-content: center;
 grid-template-rows: 50% 50%;
 height: 100%;
+    grid-row-gap: 60%;
 }
 
 
@@ -137,6 +144,7 @@ grid-template-rows: 50% 50%;
 justify-content: center;
 grid-row: 2;
     
+grid-row-gap: 20%;
 }
 
 .weather-app{
@@ -144,6 +152,7 @@ width: 100%;
 display: grid;
 grid-template-rows: 50% 50%;
 grid-row: 3;
+grid-row-gap: 20%;
 }
 
 .pic {
@@ -154,14 +163,40 @@ grid-row: 1;
 
 .pic > img{
     width: 100%;
-    padding-left: 30px;
+    /*! padding-left: 30px; */
 }
 
 .name{
-width: 100%;
+width: 0;
 text-align: center;
 font-size: xx-large;
 grid-row: 2;
+border-bottom: solid;
+/*! background-color: aqua; */
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+}
+
+.project-one-p*{
+    border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid yellow;
+}
+
+.project-two-p*{
+    border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+
+
+}
+
+.project-three-p*{
+    border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+
+
 }
 
 /*this is footer where social icon goes*/
