@@ -1,333 +1,286 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
-@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+@import url("https://fonts.googleapis.com/css?family=MedievalSharp");
 html {
-    width: 100%;
-    height: 100%;
-    display: grid;
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 body {
-    overflow-y: scroll;
-    width: inherit;
-    display: inherit;
-    justify-content: center;
-    background-color: darkred;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    grid-template-rows: 15% 15% 50% 20%;
-    height: inherit;
-
+  overflow-y: scroll;
+  width: inherit;
+  display: grid;
+  background-color: darkred;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  grid-template-rows: 20% 20% 45% 15%;
 }
-
-
-
-
 
 /*title section*/
 
 #title {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    background-color: goldenrod;
-    position: relative;
-    grid-template-columns: 50% 50%;
-    grid-row: 1;
-    grid-row: 1;
-    /*! grid-column: 1; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: goldenrod;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  grid-row: 1;
+  grid-row: 1;
+  /*! grid-column: 1; */
 }
 
+.logo {
+  order: 1;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: screen;
+  opacity: 0.5;
+  grid-column: 1;
 
-
-.logo{
-    order: 1;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-blend-mode: screen;
-    opacity: 0.5;
-    grid-column: 1;
-
-    grid-column: 1;
-    grid-row: 1;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.my-pic{
-   width: 100%;
-    height: 40%;
-    background-blend-mode: screen;
-    background-color: goldenrod;
-    border-radius: 0px 0px 50% 50%;
-    
+.my-pic {
+  width: 100%;
+  height: 40%;
+  background-blend-mode: screen;
+  background-color: goldenrod;
+  border-radius: 0px 0px 50% 50%;
 }
 
 .my-name {
-    width: 100%;
-    font-family: 'MedievalSharp', cursive;
-    text-align: center;
-    grid-column: 2;
-    height: 100%;
-    font-size: small;
+  width: 100%;
+  font-family: "MedievalSharp", cursive;
+  text-align: center;
+  grid-column: 2;
+  height: 100%;
+  font-size: small;
 }
 
 /*frame-section*/
 
-.frame{
-width: 100%;
-height: 100%;
-display: grid;
-grid-template-rows: 33% 33% 33%;
-grid-row: 2;
-    
-
+.frame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  grid-row: 2;
 }
-
 
 .quote-frame {
-width: 100%;
-height: 100%;
-grid-row: 2;
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
 }
 .quote {
-text-align: center;
-color: #f5deb3;
-width: 100%;
+  text-align: center;
+  color: #f5deb3;
+  width: 100%;
 }
 
 /*project section*/
 
-.projects{
-width: 100%;
-display: grid;
-background-color: #696969;
-grid-row: 3;
-grid-template-rows: 5% 95%;
-height: 100%;
-overflow-y: scroll;
-grid-row-gap: 10%;
+.projects {
+  width: 100%;
+  display: grid;
+  background-color: #696969;
+  grid-row: 3;
+  grid-template-rows: 5% 95%;
+  height: 100%;
+  grid-row-gap: 10%;
 }
 
-.project-title{
-width: 100%;
-font-size: xx-large;
-font-family: berkshire;
-text-align: center;
-grid-row: 1;
-
+.project-title {
+  width: 100%;
+  font-size: xx-large;
+  font-family: berkshire;
+  text-align: center;
+  grid-row: 1;
 }
 
-.web-sites{
- width: 100%;
-grid-row: 2;
-display: grid;
-grid-template-rows: 33% 33% 33%;
-height: 100%;
-/*! justify-content: center; */
- grid-row-gap: 30%;
+.web-sites {
+  width: 100%;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  height: 100%;
+  /*! justify-content: center; */
+  grid-row-gap: 30%;
+  overflow-y: scroll;
 }
 
-.pixel-art{
-    width: 100%;
-display: grid;
-justify-content: center;
-grid-template-rows: 50% 50%;
-height: 100%;
-    grid-row-gap: 70%;
-    background-color: yellow;
-
+.pixel-art {
+  width: 100%;
+  display: grid;
+  
+  grid-template-rows: 100% 100%;
+  height: 100%;
+  background-color: yellow;
 }
 
+.responsive-animal-art {
+  width: 100%;
+  display: grid;
+  grid-template-rows:100% 100%;
+  
+  grid-row: 2;
 
-
-.responsive-animal-art{
-width: 100%;
-display: grid;
-grid-template-rows: 50% 50%;
-justify-content: center;
-grid-row: 2;
-    
-grid-row-gap: 70%;
-
+  
 }
 
-.weather-app{
-width: 100%;
-display: grid;
-grid-template-rows: 50% 50%;
-grid-row: 3;
-grid-row-gap: 70%;
+.weather-app {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100% 100%;
+  grid-row: 3;
+  
 }
 
 .pic {
-width: 100%;
-height: 100%;
-grid-row: 1;
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
 }
 
-.pic > img{
-    width: 100%;
-    /*! padding-left: 30px; */
+.pic > img {
+  width: 100%;
+  /*! padding-left: 30px; */
 }
 
-.name{
-width: 100%;
-text-align: center;
-font-size: xx-large;
-grid-row: 2;
-/*! background-color: aqua; */
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
+.name {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+  grid-row: 2;
+  /*! background-color: aqua; */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
 }
 
-.project-one-p{
-    border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid yellow;
+.project-one-p {
+  border-left: 50px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 100px solid yellow;
+  background-color: gold;
 }
 
-.project-two-p{
-    border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid yellowgreen;
-
-
+.project-two-p {
+  border-left: 50px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 100px solid yellowgreen;
+  background-color: yellowgreen;
 }
 
-.project-three-p{
-    border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid aliceblue;
-
-
+.project-three-p {
+  border-left: 50px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 100px solid aliceblue;
+  background-color: lightblue;
 }
 
 /*this is footer where social icon goes*/
-.footer{
-width: 100%;
-grid-row: 4;
+.footer {
+  width: 100%;
+  grid-row: 4;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 800px){
-html {
-    width: 100%;
-    height: 100%;
-    display: grid;
-}
-
-body {
-    width: inherit;
-    height: inherit;
-    display: inherit;
-    grid-template-rows: 25% 25% 25% 25%;
-}
-
-/*title section*/
-
-.logo{
-    grid-column: 1;
-    height: 100%;
-    grid-row: 1;
-}
-
-
-.my-name{
-    font-family: 'MedievalSharp', cursive;
-    width: 100%;
-    grid-column: 3;
-    text-align: center;
-}
-
-.title {
-    width: 100%;
-    display: grid;
-    grid-row: 1;
-    height: 100%;
-    grid-template-columns: 33% 33% 33%;
-    background-color: goldenrod;
-}
-.frame{
-    width: 100%;
-    grid-row: 2;
-    justify-content: center;
-    display: grid;
+@media screen and (min-width: 800px) {
+  html {
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-
+    
+    
+    background: linear-gradient(to right, #6c4f3d 28%, #666633 92%);
+  }
+  body {
+    grid-column: 2 / 4;
+    border: solid 2px brown;
+  }
+/*title section*/
+.logo{
+    width: 40%;
 }
 
-.quote-frame{
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
 
-.qoute{
-    text-align: center;
-    color: #f5deb3;
-    width: 100%;
-}
 
-.projects{
-    width: 100%;
-    grid-row: 3;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    height: 100%;
-}
 
-.project-title{
-     grid-column: 1;
-}
+/*project section*/
 
-.web-sites{
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+  .projects {
+    overflow: visible;
+    
+    
+  }
+  
+  .web-sites{
+    grid-template-rows: 0;
+    grid-template-columns: 100% 100% 100%;
+    grid-row-gap: 0;
+    grid-column-gap: 3%;
+    overflow-x: scroll;
+    
+    
+  }
+  .web-sites::-webkit-scrollbar {
+    width: 40px;
+    background-color: brown;
 }
-
-.pixel-art{
+  .web-sites::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-image: -webkit-linear-gradient(#F5F5F5, #8A8A8A);
+}
+  
+  .pixel-art{
     grid-column: 1;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-}
-.responsive-animal-art{
-    grid-column: 2;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-}
-
-.weather-app{
-     grid-column: 3;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-}
-.pic{
+    grid-row-gap: 10%;
+    
+    
+  }
+  
+  .responsive-animal-art{
     grid-row: 1;
+    grid-column: 2;
+    
+    
+  }
+  
+  .weather-app{
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .name{
+   font-size: x-large;
+  }
+ .project-one-p {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #ff0;
+   background-color: yellow;
+}
+  
+  .project-two-p {
+
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    background-color: yellowgreen;
+    
+
+}
+  
+  
 }
 
-.name{
-    grid-row: 2;
+@media screen and (min-width: 1024px){
+    .logo{
+        height: 100%;
+        width: 50%;
+    }
 }
 
-.footer{
-    grid-row: 4;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-content: center;
-}
 
-}
+
+
+
