@@ -8,70 +8,98 @@
     <title>project-portfolio</title>
 </head>
 <body>
-    <!--This is header.that will include name and logo-->
-    <div id="title" class="title">
+    
+        <!--This is header.that will include name and logo-->
+        <header id="title" class="title">
         <picture class="logo">
-            <img class="my-pic" src="logo.jpeg" alt="logo" />
+            <img class="my-pic" src="logo.jpeg" alt="logo">
         </picture>
         <!--<div class="logo"></div>-->
         <div class="my-name">
             <h1>khorram khondkar</h1>
             <h2>Front-end knight &#9876;</h2>
         </div>
-    </div>
-    <!--this is the main pic to show the background features-->
-
+    </header>
+    <!--this is the main frame to show the background features-->
+    
     <section class="frame">
         <!--<picture class="frame">
-            <img  class="frame" src="cycleof-time.jpeg" alt="main-pic">
-        </picture>-->
+                <img  class="frame" src="cycleof-time.jpeg" alt="main-pic">
+            </picture>-->
         <div class="quote-frame">
-            <h3 class="quote"> &#8220;imagination is part of existense! &#8221;</h3>
+            <p class="quote"> &#8220;imagination is part of existense! &#8221;</p>
         </div>
-
+    
     </section>
     <!--this is a project section to show my projects-->
     <section class="projects">
-        <span class="project-title">featured work</span>
-        <div class="web-sites">
-            <div class="pixel-art">
-                <a href="https://khorramk.github.io/pixel-art-maker/">
-                    <picture class="pic">
+        <h4 class="project-title">featured work</h4>
+        <main class="web-sites">
+            <article class="pixel-art">
+                <div class="pic">
+                    <a href="https://khorramk.github.io/pixel-art-maker/" target="_blank">
+                    <picture >
+                        <source srcset="img/pixel-maker-1024.jpg 1024w, img/pixel-maker-400.jpg 400w, img/pixel-maker-260.jpg 260w" sizes="(min-width: 2500px) 100vw, 50vw, 100vw">
                         <source srcset="img/pixel-maker-400.jpg" media="(min-width: 750px)">
-                            <source sizes="(min-width: 500px) 50vw, 10vw" srcset="img/pixel-maker-1024.jpg 100w, img/pixel-maker-260.jpg 100w" media="(min-width: 2500px)">
+                        <source srcset="img/pixel-maker-1024.jpg" media="(min-width: 2500px)">
                         <img src="img/pixel-maker-260.jpg" alt="pixel-art">
+                
+                
                     </picture>
                 </a>
-                <span class="name project-one-p">pixel-art</span>
             </div>
-            <div class="responsive-animal-art">
-               <a href="https://khorramk.github.io/tiger-animal-card/"> <picture class="pic">
-                    <source srcset="img/tiger-card-400.jpg" media="(min-width: 750px)">
-                    <source sizes="(min-width: 2500px) 50vw, 10vw" srcset="img/tiger-card-1024.jpg 100w, img/tiger-card-260.jpg 100w" media="(min-wdth: 2500px)">
-
-                    <img src="img/tiger-card-260.jpg" alt="animal-card">
+               
+                    
+                
+                <p class="name project-one-p">pixel-art</p>
+            </article>
+            <article class="responsive-animal-art">
+                <div class="pic">
+                    <a href="https://khorramk.github.io/tiger-animal-card/" target="_blank">
+                    <picture >
+                        <source srcset="img/tiger-card-1024.jpg 1024w, img/tiger-card-400.jpg 400w, img/tiger-card-260.jpg 260w" sizes="(min-width: 2500px) 100vw, 50vw, 100vw">
+                        <source srcset="img/tiger-card-400.jpg" media="(min-width: 750px)">
+                        <source srcset="img/tiger-card-1024.jpg" media="(min-wdth: 2500px)">
+                
+                        <img src="img/tiger-card-260.jpg" alt="animal-card">
+                
+                
                 </picture>
-                </a>
-                <span class="name project-two-p">animal-card</span>
+            </a>
             </div>
-            <div class="weather-app">
-               <a href="https://khorramk.github.io/my-weather-app/"> <picture class="pic">
-                    <source srcset="img/weather-400.jpg" media="(min-width: 750px)">
-                        <source srcset="img/weather-1024.jpg" media="(min-width: 2500px)">
-                    <img src="img/weather-260.jpg" alt="weather-app">
-                </picture>
-                </a>
-                <span class="name project-three-p">weather-app</span>
-            </div>
-        </div>
+                
+                    
+                <p class="name project-two-p">animal-card</p>
+            </article>
+            <article class="weather-app">
+                <div class="pic">
+                    <a href="https://khorramk.github.io/my-weather-app/" target="_blank">
+                    <picture >
+                
+                        
+                        <source srcset="img/weather-1024.jpg 1024w, img/weather-400.jpg 400w, img/weather-260.jpg 260w" sizes="(min-width: 2500px) 100vw, 50vw, 100vw">
+                        <img src="img/weather-260.jpg" alt="weather-app">
+                
+                    </picture>
+                    </a>
+                </div>
+               
+               
+                
+                <p class="name project-three-p">weather-app</p>
+            </article>
+        </main>
     </section>
     <footer class="footer">
         <div class="google-link">
             <a href="//plus.google.com/u/0/113542945564153845270?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
-                <img src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="Google+" style="border:0;width:64px;height:64px;" />
+                <img src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="Google+" class="plusG" />
             </a>
         </div>
     </footer>
+
+    
+    
 </body>
 
 </html>
