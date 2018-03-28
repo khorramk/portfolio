@@ -41,8 +41,6 @@
   background-blend-mode: screen;
   opacity: 0.5;
   grid-column: 1;
-
-  grid-column: 1;
   grid-row: 1;
 }
 
@@ -167,6 +165,9 @@
   /*! padding-left: 30px; */
 }
 
+.project-name{
+  grid-row: 2;
+}
  .name {
   width: 100%;
   text-align: center;
@@ -214,7 +215,7 @@
    text-decoration:none;
  }
 
- @media screen and (min-width: 750px) {
+ @media screen and (min-width: 2500px) {
   html {
     grid-template-columns: 33% 33% 33%;
 
@@ -230,8 +231,12 @@
 
   
   .projects{
-    justify-content: center;
     overflow: hidden;
+    grid-row-end: span 4;
+  }
+
+  .project-title{
+    font-size: 6em;
   }
   .web-sites {
     grid-template-rows: 0;
@@ -241,44 +246,31 @@
     overflow-x: scroll;
     overflow-y: auto;
   }
-  .web-sites::-webkit-scrollbar {
-    width: 10px;
-    height: 2em;
-    background-color: #795548;
-   
-  }
-  .websites::-webkit-scrollbar-track {
-    background-color: peru;
-  }
-  .web-sites::-webkit-scrollbar-thumb {
-    width: 8px;
-
-    background-image: -webkit-linear-gradient(#f5f5f5, #8a8a8a);
-  }
-
-  .web-sites::-webkit-scrollbar-button {
-    width: 10px;
-    height: 10px;
-    background-color: royalblue;
-  }
-
+ 
   .pixel-art {
     grid-column: 1;
     grid-row-gap: 10%;
+    grid-template-rows: 60vh 40vh;
 
   }
 
   .responsive-animal-art {
     grid-row: 1;
     grid-column: 2;
+    grid-template-rows: 60vh 40vh;
   }
 
   .weather-app {
     grid-row: 1;
     grid-column: 3;
+    grid-template-rows: 60vh 40vh;
   }
   .name {
     font-size: x-large;
+  }
+
+  .footer{
+    grid-row: auto;
   }
   /*.project-one-p {
     border-left: 25px solid transparent;
@@ -300,21 +292,21 @@
   }
 }
 
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 800px) {
   html {
     width: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     overflow-y: scroll;
   }
 
  body{   
-    grid-template-rows: 32% 32% 32% 10%;
-    grid-column: 1/ span 2;
+    grid-template-rows: 20vh 30vh 50vh 30vh;
+    grid-column: 1;
  }
 
 
   .title {
-    font-size: 4em;
+    font-size: 2em;
   }
 
  .my-pic{
@@ -340,6 +332,49 @@
 
   .web-sites{
     grid-column: 1/ span 3;
+    grid-template-columns: 100% 100% 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .pixel-art{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .responsive-animal-art{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .weather-app{
+    grid-column: 3;
+    grid-row: 1;
+
+  }
+
+  .web-sites::-webkit-scrollbar {
+    width: 10px;
+    height: 2em;
+    background-color: #795548;
+   
+  }
+  .websites::-webkit-scrollbar-track {
+    background-color: peru;
+  }
+  .web-sites::-webkit-scrollbar-thumb {
+    width: 8px;
+
+    background-image: -webkit-linear-gradient(#f5f5f5, #8a8a8a);
+  }
+
+  .web-sites::-webkit-scrollbar-button {
+    width: 10px;
+    height: 10px;
+    background-color: royalblue;
+  }
+  .web-sites::-webkit-scrollbar-track-piece:start {
+   /* Select the top half (or left half) or scrollbar track individually */
+   width: 30vh;
   }
 
   .name {
